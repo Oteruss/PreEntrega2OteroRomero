@@ -1,12 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    
+  <header class="container">
+    <div class="d-flex justify-content-between align-items-center py-3">
+        <div class="logo">
+            <a href="index.html">
+              <img class="logo-image" src="./assets/icons/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <div>
+            <h3 class="mb-0">Oscar Otero</h3>
+        </div>
+    </div>
+    <nav class="nav justify-content-end">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/portafolio.html">Portafolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero d-flex align-items-center" style="background-image: url('assets/image/heroimg.jpeg');">
+    <div class="container text-white">
+      <h1>¡Bienvenidos!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="d-flex">
+        <a href="./pages/contacto.html" title="Contacto" class="btn btn-primary mr-2">Contáctanos</a>
+        <a href="./pages/nosotros.html" class="btn btn-secondary">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="text-center">Nuestros servicios</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="assets/image/html.jpg" alt="HTML" class="img-fluid">
+        <h3>Diseño web</h3>
+        <p>Nunc hendrerit, nibh ut tempor faucibus</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="assets/image/ilustracion.jpg" alt="Ilustración" class="img-fluid">
+        <h3>Ilustración</h3>
+        <p>Nunc hendrerit, nibh ut tempor faucibus</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="assets/image/logo.jpg" alt="Logos" class="img-fluid">
+        <h3>Logos</h3>
+        <p>Nunc hendrerit, nibh ut tempor faucibus</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="assets/image/pantone.jpg" alt="Preprensa" class="img-fluid">
+        <h3>Editorial</h3>
+        <p>Nunc hendrerit, nibh ut tempor faucibus</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="assets/image/ux.jpg" alt="UI/UX" class="img-fluid">
+        <h3>UI/UX</h3>
+        <p>Nunc hendrerit, nibh ut tempor faucibus</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="assets/image/branding.jpg" alt="Branding" class="img-fluid">
+        <h3>Branding</h3>
+        <p>Nunc hendrerit, nibh ut tempor faucibus</p>
+      </div>
+    </div>
+  </section>
+
+  <article class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Testimonios</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit maiores perferendis eaque veritatis adipisci natus atque amet numquam animi, harum sunt consectetur dolorum commodi? Ducimus assumenda laudantium voluptatum quasi voluptates?</p>
+      </div>
+      <div class="col-md-6">
+        <img src="./assets/image/testimonios.jpg" alt="Testimonio 1" class="img-fluid">
+      </div>
+    </div>
+  </article>
+
+  <section class="container my-5">
+    <h2 class="text-center">Contáctanos</h2>
+    <form action="/enviar.php" method="POST" class="mx-auto" style="max-width: 600px;">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <nav class="mb-3">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link text-white" href="./pages/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./pages/blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./pages/portafolio.html">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./pages/nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 Diseñado por Oscar Otero</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
