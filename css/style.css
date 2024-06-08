@@ -24,29 +24,10 @@ header {
     padding: 20px;
 }
 
-.logo {
-    color: #333;
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .logo-image {
     width: auto;
     height: 2rem;
     padding-right: 10px;
-}
-
-.oscar {
-    color: #333;
-    margin-left: 16px;
-}
-
-header h3 {
-    font-weight: 600;
-    color: #333;
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
 }
 
 header nav a {
@@ -137,6 +118,35 @@ form button {
     display: block;
     width: 100%;
 }
+
+/* Client section */
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    width: 150px; 
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Grid clientes */
+  
+  .container {
+    padding: 30px;
+  }
+  
+  .row {
+    margin-bottom: 30px;
+  }
+  
+  figure {
+    text-align: center;
+    margin: 0;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+  }
 
 /* Footer */
 
